@@ -1,13 +1,13 @@
 
 %define module	Net-Amazon
 %define name	perl-%{module}
-%define version	0.40
+%define version	0.43
 %define rel	1
 
 Summary:	Framework for accessing amazon.com via SOAP and XML/HTTP
 Name:		%{name}
 Version:	%{version}
-Release:	%mkrel %{rel}
+Release:	%mkrel 1
 License:	GPL or Artistic
 Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{module}
