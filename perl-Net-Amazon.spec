@@ -1,7 +1,7 @@
 
 %define module	Net-Amazon
 %define name	perl-%{module}
-%define version	0.46
+%define version	0.47
 %define rel	1
 
 Summary:	Framework for accessing amazon.com via SOAP and XML/HTTP
