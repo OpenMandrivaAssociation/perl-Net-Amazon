@@ -5,7 +5,7 @@
 Summary:	Framework for accessing amazon.com via SOAP and XML/HTTP
 Name:		%{name}
 Version:	%{version}
-Release:	%mkrel 1
+Release:	%mkrel 2
 License:	GPL or Artistic
 Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{module}
