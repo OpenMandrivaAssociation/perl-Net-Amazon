@@ -1,17 +1,18 @@
-%define module	Net-Amazon
-%define name	perl-%{module}
-%define version	0.54
+%define upstream_name	 Net-Amazon
+%define upstream_version 0.55
+
+Name:		perl-%{upstream_name}
+Version:	%perl_convert_version %{upstream_version}
+Release:	%mkrel 1
 
 Summary:	Framework for accessing amazon.com via SOAP and XML/HTTP
-Name:		%{name}
-Version:	%{version}
-Release:	%mkrel 1
-License:	GPL or Artistic
+License:	GPL+ or Artistic
 Group:		Development/Perl
-URL:		http://search.cpan.org/dist/%{module}
-Source:     http://www.cpan.org/modules/by-module/Net/%{module}-%{version}.tar.bz2
+URL:		http://search.cpan.org/dist/%{upstream_name}
+Source0:    http://www.cpan.org/modules/by-module/Net/%{upstream_name}-%{upstream_version}.tar.gz
+
 BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 Net::Amazon provides an object-oriented interface to amazon.com's
@@ -20,7 +21,7 @@ using Amazon's vast amount of data via a functional interface, without
 having to worry about the underlying communication mechanism.
 
 %prep
-%setup -q -n %{module}-%{version}
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
