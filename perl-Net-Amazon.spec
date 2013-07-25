@@ -1,15 +1,15 @@
 %define upstream_name	 Net-Amazon
-%define upstream_version 0.59
+%define upstream_version 0.62
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	2
+Version:	%perl_convert_version 0.62
+Release:	1
 
 Summary:	Framework for accessing amazon.com via SOAP and XML/HTTP
 License:	GPL+ or Artistic
 Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Net/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Net/Net-Amazon-0.62.tar.gz
 
 BuildRequires:	perl-devel
 BuildArch:	noarch
@@ -121,4 +121,5 @@ perl Makefile.PL INSTALLDIRS=vendor
 
 * Mon May 29 2006 Anssi Hannula <anssi@mandriva.org> 0.35-1mdv2007.0
 - initial Mandriva package
+
 
