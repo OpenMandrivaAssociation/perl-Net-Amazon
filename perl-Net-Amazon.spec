@@ -3,7 +3,7 @@
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version 0.62
-Release:	2
+Release:	3
 
 Summary:	Framework for accessing amazon.com via SOAP and XML/HTTP
 License:	GPL+ or Artistic
