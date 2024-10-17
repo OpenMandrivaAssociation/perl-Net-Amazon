@@ -8,7 +8,7 @@ Release:	3
 Summary:	Framework for accessing amazon.com via SOAP and XML/HTTP
 License:	GPL+ or Artistic
 Group:		Development/Perl
-URL:		http://search.cpan.org/dist/%{upstream_name}
+URL:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	http://www.cpan.org/modules/by-module/Net/Net-Amazon-0.62.tar.gz
 
 BuildRequires:	perl-devel
