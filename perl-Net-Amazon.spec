@@ -2,14 +2,14 @@
 %define upstream_version 0.62
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version 0.62
-Release:	3
+Version:	%{upstream_version}
+Release:	4
 
 Summary:	Framework for accessing amazon.com via SOAP and XML/HTTP
 License:	GPL+ or Artistic
 Group:		Development/Perl
-URL:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Net/Net-Amazon-0.62.tar.gz
+URL:		https://github.com/boumenot/p5-Net-Amazon
+Source0:	https://cpan.metacpan.org/authors/id/B/BO/BOUMENOT/Net-Amazon-0.62.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
