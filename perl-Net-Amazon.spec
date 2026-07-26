@@ -1,9 +1,7 @@
 %define upstream_name	 Net-Amazon
-%define upstream_version 0.62
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	4
+Version:	0.62
+Release:	5
 
 Summary:	Framework for accessing amazon.com via SOAP and XML/HTTP
 License:	GPL+ or Artistic
@@ -22,7 +20,7 @@ using Amazon's vast amount of data via a functional interface, without
 having to worry about the underlying communication mechanism.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
@@ -52,8 +50,7 @@ perl Makefile.PL INSTALLDIRS=vendor
 * Fri Jul 24 2009 Jérôme Quelin <jquelin@mandriva.org> 0.550.0-1mdv2010.0
 + Revision: 399266
 - update to 0.55
-- using %%perl_convert_version
-- fixed license field
+- using %0.62 fixed license field
 
 * Sun Jun 21 2009 Guillaume Rousse <guillomovitch@mandriva.org> 0.54-1mdv2010.0
 + Revision: 387780
