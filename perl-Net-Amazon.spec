@@ -2,7 +2,7 @@
 %define upstream_version 0.62
 Name:		perl-%{upstream_name}
 Version:	0.62
-Release:	1
+Release:	2
 
 Summary:	Framework for accessing amazon.com via SOAP and XML/HTTP
 License:	GPL+ or Artistic
@@ -21,7 +21,7 @@ using Amazon's vast amount of data via a functional interface, without
 having to worry about the underlying communication mechanism.
 
 %prep
-%setup -q -n %{upstream_name}-%{version}
+%setup -q -n Net-Amazon-0.62
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
