@@ -2,7 +2,7 @@
 %define upstream_version 0.62
 Name:		perl-%{upstream_name}
 Version:	0.62
-Release:	2
+Release:	3
 
 Summary:	Framework for accessing amazon.com via SOAP and XML/HTTP
 License:	GPL+ or Artistic
