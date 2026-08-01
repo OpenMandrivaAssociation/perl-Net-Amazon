@@ -2,7 +2,7 @@
 %define upstream_version 0.62
 Name:		perl-%{upstream_name}
 Version:	0.62
-Release:	3
+Release:	4
 
 Summary:	Framework for accessing amazon.com via SOAP and XML/HTTP
 License:	GPL+ or Artistic
@@ -29,6 +29,9 @@ perl Makefile.PL INSTALLDIRS=vendor
 
 %install
 %makeinstall_std
+
+%check
+make test || :
 
 %files
 %doc README Changes
